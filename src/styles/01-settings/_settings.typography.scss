@@ -1,0 +1,15 @@
+// @include font-face('Avenir LT Std', AvenirLTStd-Black, $font-weight-bolder);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800&d;0,900;1,400;1,500&display=swap');
+
+$MontserratFontFamily: 'Montserrat', sans-serif;
+
+$font-family-base: $MontserratFontFamily;
+$headings-font-family: $font-family-base;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+$font-weight-bolder: 900;

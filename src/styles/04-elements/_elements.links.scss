@@ -1,0 +1,6 @@
+a {
+  @include basic-transition(color);
+  &:hover{
+    text-decoration: none;
+  }
+}
