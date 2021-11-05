@@ -4,7 +4,8 @@
   overflow: hidden;
 
   padding: {
-    top: 210px;
+    top: rem(198px);
+    bottom: 450px; //test
   }
 
   &__bg {
@@ -16,9 +17,33 @@
     z-index: 1;
   }
 
+  &__bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: rem(176px);
+    bottom: 0;
+    transform: translateY(-50%);
+    left: 0;
+    opacity: 0.1;
+    filter: blur(324px);
+    background: $primary;
+  }
+
   &__bg-image {
     max-width: 100%;
     height: auto;
+  }
+
+  &__volcano {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__volcano__fire {
+    display: flex;
+    justify-content: center;
   }
 
   &__container {
@@ -26,6 +51,26 @@
     @include make-container-max-widths();
     position: relative;
     z-index: 2;
+  }
+
+  &__sub {
+    color: $grey-blue;
+    font-size: rem(18px);
+    line-height: rem(23px);
+    padding-left: rem(24px);
+    max-width: rem(375px + 24px);
+    position: relative;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+
+    &::before {
+      content: '';
+      width: rem(10px);
+      height: rem(10px);
+      position: absolute;
+      top: rem(5px);
+      left: 0;
+      background-color: $primary;
+    }
   }
 
   &__title {
@@ -36,10 +81,20 @@
     text-align: center;
     max-width: rem(528px);
     margin: {
+      top: rem(54px);
       left: auto;
       right: auto;
     }
   }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(48px);
+  }
+
+
 
 }
 

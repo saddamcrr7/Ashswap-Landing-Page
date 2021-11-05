@@ -1,0 +1,116 @@
+.c-btn {
+  $root: &;
+
+  position: relative;
+  padding: rem(5px);
+  background-color: $dark;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+
+  &::before,&::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 10.79px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $dark;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+  }
+
+  &::before {
+    left: -1px;
+  }
+
+  &::after {
+    right: -1px;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 16px 29px 16px 49px;
+    background-color: $primary;
+    transition: 0.4s ease;
+
+    &::before,&::after {
+      position: absolute;
+      content: '';
+      width: 10.79px;
+      height: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $dark;
+      opacity: 0;
+      transition: 0.3s;
+      transition-delay: 0s;
+    }
+
+    &::before {
+      left: 0;
+      top: -6px;
+    }
+
+    &::after {
+      left: 100%;
+      bottom: -6px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem(12px);
+    line-height: rem(15px);
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+
+    &::before{
+      content: '';
+      position: absolute;
+      width: rem(3px);
+      height: rem(4.05px);
+      background-color: $dark;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__icon {
+    width: 7px;
+    height: 10px;
+    fill: none;
+    margin-left: 22px;
+
+    >path {
+     stroke: $white;
+     stroke-width: 2px;
+    }
+  }
+
+  &:hover {
+
+    &::before {
+      top: 0;
+    }
+
+    &::after{
+      top: 100%;
+    }
+
+    &::after, &::before{
+      opacity: 0;
+      transition-delay: 0s;
+    }
+
+    #{$root}__inner {
+      background-color: $grey-blue;
+
+      &::before, &::after {
+        transition-delay: 0.3s;
+        opacity: 1;
+        left: 50%;
+      }
+    }
+  }
+}
