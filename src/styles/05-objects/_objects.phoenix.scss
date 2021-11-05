@@ -1,0 +1,73 @@
+.o-phoenix {
+  position: relative;
+  padding: {
+    top: rem(98px)
+  }
+  z-index: 2;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  &__row {
+    @include make-row();
+  }
+
+  &__col {
+    @include make-col-ready();
+
+
+    &--left {
+      @include make-col(4.325)
+    }
+
+    &--right {
+      @include make-col(7.675)
+    }
+  }
+
+  &__sub {
+    color: $grey-blue;
+    font-size: rem(18px);
+    line-height: rem(23px);
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+  }
+
+  &__title {
+    color: $white;
+    font-size: rem(64px);
+    line-height: rem(79px);
+    font-weight: $font-weight-bold;
+    margin: {
+      top: rem(27px);
+      left: auto;
+      right: auto;
+    }
+  }
+
+  &__images {
+    margin-top: -80px;
+    position: relative;
+  }
+
+  &__image {
+    &--main {
+      margin-top: -150px;
+    }
+    &--bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem(24px);
+    line-height: rem(30px);
+    font-weight: $font-weight-bold;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+
+  }
+}
