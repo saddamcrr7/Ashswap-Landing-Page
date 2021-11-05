@@ -31,6 +31,7 @@
 @import '02-tools/tools.placeholder';
 @import '02-tools/tools.spacing';
 @import '02-tools/tools.object-fit';
+@import '02-tools/tools.rem';
 
 // 03. Generic
 @import '03-generic/generic.selection';
@@ -49,7 +50,7 @@
 
 
 // 06. Components
-
+@import '06-components/components.navbar';
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';

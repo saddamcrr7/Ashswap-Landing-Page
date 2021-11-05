@@ -51,6 +51,18 @@ module.exports = {
         ]
       },
       {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+      {
         test: /\.html$/,
         use: {
           loader: "html-loader",
@@ -96,13 +108,12 @@ module.exports = {
       template: "./src/index.html",
       filename: "index.html"
     }),
-
     // ComppresionPlugin will Prepare compressed versions of assets to serve them with Content-Encoding.
     // In this case we use gzip
     // But, you can also use the newest algorithm like brotli, and it's supperior than gzip
-    new CompressionPlugin({
-      algorithm: "gzip"
-    }),
-    new BrotliPlugin(),
+    // new CompressionPlugin({
+    //   algorithm: "gzip"
+    // }),
+    // new BrotliPlugin(),
   ]
 };

@@ -1,0 +1,72 @@
+.c-navbar {
+  $root: &;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: rem(21px) 0;
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths()
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__brand {
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: rem(5px);
+  }
+
+  &__nav-item {
+    &+& {
+      margin-left: rem(56px);
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-size: rem(12px);
+    font-weight: $font-weight-bold;
+  }
+
+  &__btn {
+    margin-top: rem(5px);
+    position: relative;
+    color: $white;
+    font-size: rem(12px);
+    font-weight: $font-weight-bold;
+    padding: rem(14px) rem(27px);
+    background-color: $primary;
+    transition: 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: rem(2.53px);
+      height: rem(3.43px);
+      background-color: $dark;
+    }
+
+    &:hover {
+      color: $white;
+      background: $grey-blue;
+    }
+  }
+
+}
