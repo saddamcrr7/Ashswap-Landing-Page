@@ -17,6 +17,15 @@
     z-index: 1;
   }
 
+  &__bg-container {
+    @include make-container();
+    @include make-container-max-widths();
+
+    position: relative;
+    display: flex;
+    height: 100%;
+  }
+
   &__bg-overlay {
     position: absolute;
     width: 100%;
@@ -32,6 +41,12 @@
   &__bg-image {
     max-width: 100%;
     height: auto;
+  }
+
+  &__particles {
+    position: absolute;
+    bottom: 90px;
+    right: 0;
   }
 
   &__volcano {
