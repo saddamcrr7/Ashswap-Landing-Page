@@ -39,8 +39,6 @@
       content: '';
       width: 10.79px;
       height: 4px;
-      left: 50%;
-      transform: translateX(-50%);
       background-color: $dark;
       opacity: 0;
       transition: 0.3s;
@@ -53,7 +51,7 @@
     }
 
     &::after {
-      left: 100%;
+      right: 0;
       bottom: -6px;
     }
   }
@@ -106,10 +104,17 @@
     #{$root}__inner {
       background-color: $grey-blue;
 
+      &::before {
+        left: 27px;
+      }
+
+      &::after {
+        right: 27px;
+      }
+
       &::before, &::after {
         transition-delay: 0.3s;
         opacity: 1;
-        left: 50%;
       }
     }
   }
