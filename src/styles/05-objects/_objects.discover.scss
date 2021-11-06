@@ -1,0 +1,61 @@
+.o-discover {
+  padding-top: rem(67px);
+  padding-bottom: rem(239px);
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    >svg {
+      max-width: 100%;
+    }
+  }
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content {
+    max-width: rem(730px);
+    margin-left: auto;
+  }
+
+  &__title {
+    color: $white;
+    font-size: rem(81px);
+    line-height: rem(100px);
+    margin-bottom: 0;
+
+    >span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-color: $primary;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: rem(24px);
+    line-height: rem(30px);
+    text-align: right;
+    max-width: rem(523px);
+    margin-top: rem(64px);
+    margin-bottom: 0;
+    margin-left: auto;
+
+    >span {
+      color: $primary;
+    }
+  }
+}

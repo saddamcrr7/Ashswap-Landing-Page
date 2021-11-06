@@ -2,7 +2,7 @@
   position: relative;
   padding: {
     top: rem(98px);
-    bottom: rem(135px);
+    bottom: rem(277px);
   }
   z-index: 2;
 
@@ -33,6 +33,7 @@
     font-size: rem(18px);
     line-height: rem(23px);
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+    margin-bottom: 0;
   }
 
   &__title {
@@ -44,6 +45,7 @@
       top: rem(27px);
       left: auto;
       right: auto;
+      bottom: 0;
     }
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
   }
@@ -70,6 +72,6 @@
     line-height: rem(30px);
     font-weight: $font-weight-bold;
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
-
+    margin-bottom: 0;
   }
 }
