@@ -86,7 +86,11 @@
     }
   }
 
-  &:hover {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover, &:active{
 
     &::before {
       top: 0;
