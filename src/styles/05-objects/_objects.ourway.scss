@@ -29,9 +29,9 @@
     font-size: rem(64px);
     line-height: rem(79px);
     font-weight: $font-weight-bold;
-    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
     margin-top: rem(47px);
     margin-bottom: 0;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
   }
 
   &__vector-left {
@@ -80,6 +80,7 @@
     margin-bottom: rem(45px);
     padding-left: rem(47px);
     list-style: none;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
 
     &::before {
       position: absolute;
