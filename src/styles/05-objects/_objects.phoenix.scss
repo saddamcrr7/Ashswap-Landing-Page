@@ -12,19 +12,19 @@
   }
 
   &__row {
-    @include make-row();
+    @include make-row($gutter: 0px);
   }
 
   &__col {
-    @include make-col-ready();
+    @include make-col-ready($gutter: 0px);
 
 
     &--left {
-      @include make-col(4.325)
+      @include make-col(4.12)
     }
 
     &--right {
-      @include make-col(7.675)
+      @include make-col(7.88)
     }
   }
 
