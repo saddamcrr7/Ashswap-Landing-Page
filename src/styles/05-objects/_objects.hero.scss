@@ -61,6 +61,11 @@
     justify-content: center;
   }
 
+  &__volcano-heli {
+    display: flex;
+    justify-content: center;
+  }
+
   &__container {
     @include make-container();
     @include make-container-max-widths();
