@@ -64,6 +64,11 @@
   &__volcano-heli {
     display: flex;
     justify-content: center;
+
+    >svg {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__container {

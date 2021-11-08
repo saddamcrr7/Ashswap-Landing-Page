@@ -48,6 +48,7 @@
 @import '05-objects/objects.hero';
 @import '05-objects/objects.phoenix';
 @import '05-objects/objects.discover';
+@import '05-objects/objects.sliders';
 @import '05-objects/objects.ourway';
 @import '05-objects/objects.cta';
 @import '05-objects/objects.footer';
@@ -57,6 +58,12 @@
 // 06. Components
 @import '06-components/components.btn';
 @import '06-components/components.navbar';
+@import '06-components/components.contentslider';
+@import '06-components/components.counternav';
+@import '06-components/components.imageslider';
+@import '06-components/components.nextslider';
+@import '06-components/components.prevslider';
+@import '06-components/components.titleslider';
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';

@@ -1,0 +1,24 @@
+.c-counternav {
+  cursor: pointer;
+
+  &__count {
+    color: $grey-blue;
+    font-size: rem(18px);
+    line-height: rem(22.32px);
+    margin-bottom: rem(8px);
+    font-weight: $font-weight-bold;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+  }
+
+  &__text {
+    color: $grey-blue;
+    font-size: rem(14px);
+    line-height: rem(18px);
+    margin-bottom: 0;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+  }
+
+  &--right{
+    text-align: right;
+  }
+}

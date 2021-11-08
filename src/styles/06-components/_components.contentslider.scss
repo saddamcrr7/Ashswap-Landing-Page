@@ -1,0 +1,37 @@
+.c-contentslider {
+  width: rem(255px);
+  height: rem(321px);
+  margin-right: 60px;
+  overflow: hidden;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item {
+    height: rem(321px);
+  }
+
+  &__dot {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 50;
+
+    >.swiper-pagination-bullet {
+      width: 48.2px;
+      height: 13px;
+      border: 1px solid #FFFFFF;
+      transition: background 0.3s;
+    }
+
+    .swiper-pagination-bullet+.swiper-pagination-bullet {
+      margin-left: rem(7px);
+    }
+
+    >.swiper-pagination-bullet-active {
+      background: #FF005C;
+    }
+  }
+}

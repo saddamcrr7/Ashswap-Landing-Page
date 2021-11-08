@@ -1,0 +1,73 @@
+.o-sliders {
+  position: relative;
+  padding-top: rem(31px);
+  padding-bottom: rem(97px);
+
+  &__bg  {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    >svg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+    position: relative;
+    z-index: 2;
+  }
+
+  &__row {
+    @include make-row($gutter: 0px);
+  }
+
+  &__col {
+    @include make-col-ready($gutter: 0px);
+
+
+    &--left {
+      @include make-col(4.12)
+    }
+
+    &--right {
+      @include make-col(7.88);
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    margin-top: rem(39px);
+    max-width: rem(921px);
+    position: relative;
+  }
+
+  &__wrapper-inner {
+    margin: 0 auto;
+    min-height: 440px;
+    max-width: rem(730px);
+    display: flex;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
