@@ -1,14 +1,15 @@
 .c-imageslider {
   width: 100%;
   max-width: rem(294px);
+  margin-top: rem(70px);
   overflow: hidden;
+  filter: drop-shadow(0px 10px 50px rgba(25, 22, 41, 0.5));
 
   &__wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     transition-property: transform;
   }
 

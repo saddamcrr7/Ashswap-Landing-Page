@@ -16,6 +16,16 @@
     }
   }
 
+  &__imagebg {
+    position: absolute;
+    width: rem(539px);
+    height: rem(440px);
+    top: 0;
+    bottom: 0;
+    right: rem(93px);
+    background: linear-gradient(304deg, #FFC10D -1.19%, #54C8EA 99.11%);
+  }
+
   &__container {
     @include make-container();
     @include make-container-max-widths();

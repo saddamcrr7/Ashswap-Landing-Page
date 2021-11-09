@@ -1,7 +1,8 @@
 .c-contentslider {
   width: rem(255px);
   height: rem(321px);
-  margin-right: 60px;
+  margin-right: rem(60px);
+  margin-top: rem(32px);
   overflow: hidden;
 
   &__wrapper {
@@ -11,12 +12,55 @@
 
   &__item {
     height: rem(321px);
+    padding: rem(47px) rem(32px);
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background-color: $grey-blue;
+    clip-path: polygon(100% 0, 100% 76%, 82% 100%, 0 100%, 0 0);
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: rem(13px);
+      height: rem(13px);
+      bottom: 0;
+      left: 0;
+      background-color: $dark;
+    }
+  }
+
+  &__title {
+    position: relative;
+    color: $white;
+    font-size: rem(18px);
+    line-height: rem(23px);
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+    z-index: 2;
+  }
+
+  &__text {
+    position: relative;
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(18px);
+    margin-top: rem(32px);
+    margin-bottom: 0;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+    opacity: 0.4;
+    z-index: 2;
   }
 
   &__dot {
+    position: absolute;
+    bottom: 4px;
     display: flex;
     justify-content: center;
-    position: absolute;
     z-index: 50;
 
     >.swiper-pagination-bullet {
