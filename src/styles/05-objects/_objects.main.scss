@@ -1,3 +1,37 @@
 .o-main {
   background: $dark;
+  position: relative;
+
+  &__lines {
+    width: 100%;
+   max-width: rem(1111px);
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  &__line {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #33324A;
+
+    &--1 {
+      left: 0;
+    }
+
+    &--2 {
+      left: 34.33333%;
+    }
+
+    &--3 {
+      right: 0;
+    }
+  }
 }
