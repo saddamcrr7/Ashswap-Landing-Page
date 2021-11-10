@@ -63,7 +63,7 @@ const imageslider = new Swiper('.c-imageslider', {
   allowTouchMove: false,
 
   controller: {
-    control: [contentslider, nextslider,
+    control: [contentslider,
       titleslider
     ],
     by: 'container'
