@@ -8,6 +8,7 @@ import Swiper, {
 // configure Swiper to use modules
 Swiper.use([Navigation, Pagination, Controller, EffectFade, Autoplay]);
 
+import { gsap } from "../scripts/vendor/gsap-member/src/all";
 
 const prevslider = new Swiper('.c-prevslider', {
   initialSlide: 2,
@@ -108,3 +109,20 @@ if(prevsliderElm) {
     nextslider.slidePrev()
   })
 }
+
+
+//hero partical animation
+
+gsap.from(".o-hero__particle--1", {width: 43, duration: 0.8, repeat:-1, repeatDelay: 3, yoyo: true});
+
+gsap.to(".o-hero__particle--2", {height: 14, duration: 1, delay: 1.5, repeat:-1, repeatDelay: 2, yoyo: true});
+
+gsap.from(".o-hero__particle--3", {width: 49, duration: 1, delay: 4, repeat:-1, repeatDelay: 2, yoyo: true});
+
+gsap.from(".o-hero__particle--4", {height: 24, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});
+
+const sparkTl = gsap.timeline({repeat:-1, repeatDelay: 2 })
+sparkTl.to(".o-hero__particle--5", {y: -700, duration: 5 })
+.to(".o-hero__particle--5", {opacity: 0, duration: 0.5,  delay : -4.5});
+
+// gsap.from(".o-hero__particle--6", {height: 24, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});
