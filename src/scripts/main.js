@@ -113,16 +113,23 @@ if(prevsliderElm) {
 
 //hero partical animation
 
-gsap.from(".o-hero__particle--1", {width: 43, duration: 0.8, repeat:-1, repeatDelay: 3, yoyo: true});
+gsap.from(".o-hero__particle--1", {scaleX: 0, duration: 0.8, repeat:-1, repeatDelay: 3, yoyo: true});
 
-gsap.to(".o-hero__particle--2", {height: 14, duration: 1, delay: 1.5, repeat:-1, repeatDelay: 2, yoyo: true});
+gsap.to(".o-hero__particle--2", {scaleY: 0, duration: 1, delay: 1.5, repeat:-1, repeatDelay: 2, yoyo: true});
 
-gsap.from(".o-hero__particle--3", {width: 49, duration: 1, delay: 4, repeat:-1, repeatDelay: 2, yoyo: true});
+gsap.from(".o-hero__particle--3", {scaleX: 0, duration: 1, delay: 4, repeat:-1, repeatDelay: 2, yoyo: true});
 
-gsap.from(".o-hero__particle--4", {height: 24, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});
+gsap.from(".o-hero__particle--4", {scaleY: 0, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});
 
-const sparkTl = gsap.timeline({repeat:-1, repeatDelay: 2 })
-sparkTl.to(".o-hero__particle--5", {y: -700, duration: 5 })
-.to(".o-hero__particle--5", {opacity: 0, duration: 0.5,  delay : -4.5});
+const sparkTl = gsap.timeline({repeat:-1})
+sparkTl.to(".o-hero__particle--5", {y: -400, duration: 3 })
+.to(".o-hero__particle--5", {opacity: 0, duration: 1,  delay : -1})
+.to(".o-hero__particle--6", {y: -250, duration: 3,  delay : -3 })
+.to(".o-hero__particle--6", {opacity: 0, duration: 1,  delay : -1})
+.to(".o-hero__particle--7", {y: -400, duration: 3, })
+.to(".o-hero__particle--7", {opacity: 0, duration: 1,  delay : -1})
+.to(".o-hero__particle--8", {y: -300, duration: 3,  delay : -3 })
+.to(".o-hero__particle--8", {opacity: 0, duration: 1,  delay : -1})
+
 
 // gsap.from(".o-hero__particle--6", {height: 24, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});

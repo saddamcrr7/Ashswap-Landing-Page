@@ -54,34 +54,39 @@
   &__particle {
     position: absolute;
     background-color: $primary;
+    will-change: transform;
 
     &--1 {
-      width: 0;
+      width: rem(43px);
       height: rem(15px);
       left: rem(105px);
       top: rem(336px);
+      transform-origin: left;
     }
 
     &--2 {
       width: rem(14px);
-      height: 0;
+      height: rem(14px);
       top: rem(330px);
       right: 0;
+      transform-origin: left top;
     }
 
     &--3 {
-      width: 0;
+      width: rem(49px);
       height: rem(8px);
       top: rem(413px);
       right: rem(90px);
+      transform-origin: right top;
       opacity: 0.3;
     }
 
     &--4 {
       width: rem(24px);
-      height: 0;
+      height: rem(24px);
       bottom: rem(317px);
       right: 0;
+      transform-origin: right bottom;
     }
 
     &--5 {
@@ -99,6 +104,23 @@
       left: rem(335px);
       filter: blur(10px);
     }
+
+    &--7 {
+      width: rem(10.47px);
+      height: rem(10.47px);
+      bottom:  0;
+      left: rem(100px);
+      filter: blur(10px);
+    }
+
+    &--8 {
+      width: rem(16px);
+      height: rem(16px);
+      bottom: 0;
+      right: rem(135px);
+      filter: blur(10px);
+    }
+
 
   }
 
