@@ -160,3 +160,13 @@ const CTAParticlesTl = gsap.timeline({repeat:-1, repeatDelay: 4, yoyo: true})
 CTAParticlesTl
 .to('.cta__particle--3',{x: 200, opacity: 0, duration: 0.8,})
 .to('.cta__particle--4',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
+
+
+const sparkTl2 = gsap.timeline({repeat:-1})
+sparkTl2.from(".o-sliders__particle--1", {y: 500, duration: 3 })
+.to(".o-sliders__particle--1", {opacity: 0, duration: 1,  delay : -1})
+.to(".o-sliders__particle--2", {y: -700, duration: 4,  delay : -2})
+.to(".o-sliders__particle--2", {opacity: 0, duration: 1,  delay : -1})
+
+gsap.to('.o-sliders__particle--4',{x: 200, duration: 1, repeat:-1, repeatDelay: 1.5, yoyo: true})
+gsap.to('.o-sliders__particle--5' ,{x: -200, duration:1, repeat:-1, repeatDelay: 2, yoyo: true})

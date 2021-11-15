@@ -16,6 +16,11 @@
     }
   }
 
+  &__particle {
+    &--2 {
+    }
+  }
+
   &__imagebg {
     position: absolute;
     width: rem(539px);
