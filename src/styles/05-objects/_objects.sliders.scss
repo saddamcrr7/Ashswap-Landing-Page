@@ -29,6 +29,24 @@
     bottom: 0;
     right: rem(93px);
     background: linear-gradient(304deg, #FFC10D -1.19%, #54C8EA 99.11%);
+
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-color: $dark
+    }
+
+    &::before {
+      right: rem(24px);
+      bottom: 0;
+    }
+
+    &::after {
+      bottom: rem(24px);
+      right: 0;
+    }
   }
 
   &__container {
