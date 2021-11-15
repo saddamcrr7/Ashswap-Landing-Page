@@ -119,7 +119,7 @@ gsap.to(".o-hero__particle--2", {scaleY: 0, duration: 1, delay: 1.5, repeat:-1, 
 
 gsap.from(".o-hero__particle--3", {scaleX: 0, duration: 1, delay: 4, repeat:-1, repeatDelay: 2, yoyo: true});
 
-gsap.from(".o-hero__particle--4", {scaleY: 0, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});
+gsap.from(".o-hero__particle--4", {scaleY: 0, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, });
 
 const sparkTl = gsap.timeline({repeat:-1})
 sparkTl.to(".o-hero__particle--5", {y: -400, duration: 3 })
@@ -132,4 +132,25 @@ sparkTl.to(".o-hero__particle--5", {y: -400, duration: 3 })
 .to(".o-hero__particle--8", {opacity: 0, duration: 1,  delay : -1})
 
 
-// gsap.from(".o-hero__particle--6", {height: 24, duration: 1, delay: 1, repeat:-1, repeatDelay: 2, yoyo: true});
+
+gsap.to('.o-discover__particle--1',{scaleY: 0, duration: 0.8, repeat:-1, repeatDelay: 2, yoyo: true})
+gsap.to('.o-discover__particle--7',{scaleY: 0, duration: 0.8, repeat:-1, repeatDelay: 3, yoyo: true})
+gsap.to('.o-discover__particle--5',{scaleX: 0, duration: 0.8, delay : 0.5, repeat:-1, repeatDelay: 3, yoyo: true})
+
+const discoverParticlesTl = gsap.timeline({repeat:-1, repeatDelay: 4, yoyo: true})
+discoverParticlesTl
+.to('.o-discover__particle--2',{x: 200, opacity: 0, duration: 0.8,})
+.to('.o-discover__particle--3',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
+.to('.o-discover__particle--4',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
+.to('.o-discover__particle--6',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
+.to('.o-discover__title span',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
+
+
+gsap.to('.cta__particle--1',{scaleX: 0, duration: 1, repeat:-1, repeatDelay: 2, yoyo: true})
+gsap.to('.cta__particle--2' ,{scaleY: 0, duration: 0.8, repeat:-1, repeatDelay: 2, yoyo: true})
+
+
+const CTAParticlesTl = gsap.timeline({repeat:-1, repeatDelay: 4, yoyo: true})
+CTAParticlesTl
+.to('.cta__particle--3',{x: 200, opacity: 0, duration: 0.8,})
+.to('.cta__particle--4',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
