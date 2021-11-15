@@ -10,6 +10,12 @@ Swiper.use([Navigation, Pagination, Controller, EffectFade, Autoplay]);
 
 import { gsap } from "../scripts/vendor/gsap-member/src/all";
 
+import Parallax from 'parallax-js'
+
+const scene = document.getElementById('scene');
+const parallaxInstance = new Parallax(scene);
+
+
 const prevslider = new Swiper('.c-prevslider', {
   initialSlide: 2,
   slidesPerView: 1,
