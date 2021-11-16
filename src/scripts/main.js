@@ -23,6 +23,7 @@ const prevslider = new Swiper('.c-prevslider', {
   slideClass: 'c-prevslider__item',
   slideActiveClass: 'is-active',
   loop: true,
+  speed: 700,
   allowTouchMove: false
 })
 
@@ -33,7 +34,8 @@ const nextslider = new Swiper('.c-nextslider', {
   slideClass: 'c-nextslider__item',
   slideActiveClass: 'is-active',
   loop: true,
-  allowTouchMove: false
+  speed: 700,
+  allowTouchMove: false,
 })
 
 
