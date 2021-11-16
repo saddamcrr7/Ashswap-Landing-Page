@@ -68,6 +68,7 @@ const imageslider = new Swiper('.c-imageslider', {
   slideActiveClass: 'is-active',
   loop: true,
   allowTouchMove: false,
+  speed: 700,
 
   controller: {
     control: [contentslider,
@@ -137,6 +138,10 @@ sparkTl.to(".o-hero__particle--5", {y: -400, duration: 3 })
 .to(".o-hero__particle--8", {y: -300, duration: 3,  delay : -3 })
 .to(".o-hero__particle--8", {opacity: 0, duration: 1,  delay : -1})
 
+const fireTl = gsap.timeline({repeat:-1, yoyo: true})
+
+fireTl.to('.o-hero__volcano-flame--sm', {y: -10, duration: 0.7, ease: 'none'})
+.to('.o-hero__volcano-flame--lg', {y: -15, duration: 1, delay: -0.8, ease: 'none'})
 
 
 gsap.to('.o-discover__particle--1',{scaleY: 0, duration: 0.8, repeat:-1, repeatDelay: 2, yoyo: true})
