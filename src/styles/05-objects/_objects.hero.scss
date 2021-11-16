@@ -144,18 +144,18 @@
   &__volcano-ray {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -34px;
     transform: translateX(-50%);
   }
 
   &__volcano-flame {
     position: absolute;
-    top: 0;
+    top: rem(30px);
     left: 50%;
     transform: translateX(-50%);
 
     &--sm {
-      top: -30px;
+      top: -10px;
     }
   }
 
@@ -203,7 +203,7 @@
     line-height: rem(79px);
     font-weight: $font-weight-bold;
     text-align: center;
-    max-width: rem(528px);
+    max-width: rem(695px);
     margin: {
       top: rem(54px);
       left: auto;
