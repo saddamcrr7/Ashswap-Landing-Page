@@ -31,10 +31,10 @@
     position: absolute;
     width: 100%;
     height: rem(176px);
-    bottom: 0;
+    top: 750px;
     transform: translateY(-50%);
     left: 0;
-    opacity: 0.1;
+    opacity: 0.2;
     filter: blur(324px);
     background: $primary;
   }
@@ -143,7 +143,7 @@
 
   &__volcano-ray {
     position: absolute;
-    left: 50%;
+    left: 46%;
     bottom: -34px;
     transform: translateX(-50%);
   }

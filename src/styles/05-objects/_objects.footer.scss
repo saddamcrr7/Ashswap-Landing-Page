@@ -5,24 +5,34 @@
 
   &__container {
     @include make-container();
+    @include make-container-max-widths();
 
-    text-align: center;
-    max-width: rem(379px + $grid-gutter-width);
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: rem(41px);
-    padding-bottom: rem(25px);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: rem(67px);
+    padding-bottom: rem(52px - 18px);
   }
 
-  &__cta {
-    margin-top: rem(24px);
+  &__brand {
+    margin-top: rem(-50px);
   }
+
+  &__logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__navs {
+    width: 100%;
+    max-width: rem(300px);
+  }
+
 
   &__nav {
     display: flex;
     align-items: center;
-    margin-top: rem(57px);
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
@@ -30,7 +40,7 @@
 
   &__nav-item {
     &+& {
-      margin-left: rem(65px);
+      margin-left: rem(32px);
     }
   }
 
@@ -41,22 +51,11 @@
     font-weight: $font-weight-bold;
   }
 
-  &__text {
-    color: $white;
-    font-size: rem(10px);
-    line-height: rem(13px);
-    margin-top: rem(53px);
-    opacity: 0.3;
-  }
-
   &__links {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    padding-top: rem(27px);
-    padding-bottom: rem(38px);
-    border-top: 1px solid rgba($white, 0.2);
+    margin-top: rem(35px);
   }
 
   &__link {
@@ -64,15 +63,55 @@
     font-size: rem(10px);
     line-height: rem(13px);
     text-decoration: underline;
+    margin-bottom: 18px;
+    width: 33.33%;
     opacity: 0.3;
-
-    &+& {
-      margin-left: rem(36px);
-    }
 
     &:hover {
       opacity: 1;
       text-decoration: underline;
     }
+  }
+
+  &__socials {
+    width: 100%;
+    max-width: rem(255px);
+  }
+
+  &__socials-text {
+    color: $white;
+    font-size: rem(10px);
+    line-height: rem(14px);
+    margin-bottom: 19px;
+  }
+
+  &__socials-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  &__socials-item {
+    &+& {
+      margin-left: 8px;
+    }
+  }
+
+  &__bottom {
+    padding: rem(38px) 0;
+    border-top: 1px solid rgba($white, 0.2);
+  }
+
+  &__text {
+    @include make-container();
+
+    max-width: rem(379px + $grid-gutter-width);
+    color: $white;
+    font-size: rem(10px);
+    line-height: rem(13px);
+    text-align: center;
+    margin-bottom: 0;
+    opacity: 0.3;
   }
 }
