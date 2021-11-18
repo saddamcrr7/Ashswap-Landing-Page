@@ -56,10 +56,49 @@
     }
 
     &--top {
-      position: absolute;
-      top: rem(10px);
-      right: rem(100px);
+      position: absolute !important;
+      top: rem(10px) !important;
+      right: rem(100px) !important;
+      left: auto !important;
+      z-index: 5;
+
+      svg {
+        position: relative;
+      }
     }
+
+    &--bg {
+      position: relative !important;
+    }
+  }
+
+  &__hover-list {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  &__hover-item {
+    list-style: none;
+    position: absolute;
+    pointer-events: none;
+    z-index: 6;
+    will-change: transform;
+  }
+
+
+  &__hover-title {
+    color: $white;
+    font-size: rem(18px);
+    line-height: rem(22.64px);
+    font-weight: $font-weight-bold;
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+  }
+
+  &__hover-date {
+    color: $white;
+    font-size: rem(14px);
+    line-height: rem(17.64px);
+    text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
   }
 
   &__list {
@@ -103,4 +142,7 @@
       }
     }
   }
+}
+.js-spot {
+  cursor: pointer;
 }
