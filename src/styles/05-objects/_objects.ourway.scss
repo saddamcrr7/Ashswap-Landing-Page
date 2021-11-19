@@ -142,7 +142,23 @@
       }
     }
   }
+
+  &__particle {
+    &--1 {
+      transform-origin: right;
+    }
+  }
 }
 .js-spot {
   cursor: pointer;
+
+  rect{
+    transition: 0.3s;
+  }
+
+  &:hover {
+    rect {
+      filter: drop-shadow(0px 0px 6px $primary)
+    }
+  }
 }
