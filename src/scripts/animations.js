@@ -48,14 +48,14 @@ function animations() {
   .to('.o-discover__title span',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
 
 
-  gsap.to('.cta__particle--1',{scaleX: 0, duration: 1, repeat:-1, repeatDelay: 2, yoyo: true})
-  gsap.to('.cta__particle--2' ,{scaleY: 0, duration: 0.8, repeat:-1, repeatDelay: 2, yoyo: true})
+  gsap.to('.o-cta__particle--1',{scaleX: 0, duration: 1, repeat:-1, repeatDelay: 2, yoyo: true})
+  gsap.to('.o-cta__particle--2' ,{scaleY: 0, duration: 0.8, repeat:-1, repeatDelay: 2, yoyo: true})
 
 
   const CTAParticlesTl = gsap.timeline({repeat:-1, repeatDelay: 4, yoyo: true})
   CTAParticlesTl
-  .to('.cta__particle--3',{x: 200, opacity: 0, duration: 0.8,})
-  .to('.cta__particle--4',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
+  .to('.o-cta__particle--3',{x: 200, opacity: 0, duration: 0.8,})
+  .to('.o-cta__particle--4',{x: 200, opacity: 0, duration: 0.8, delay : -0.8})
 
 
   const sparkTl2 = gsap.timeline({repeat:-1})

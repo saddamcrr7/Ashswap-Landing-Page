@@ -3,6 +3,11 @@
   padding-bottom: rem(239px);
   position: relative;
 
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+    padding-bottom: rem(100px);
+  }
+
   &__bg {
     position: absolute;
     display: flex;
@@ -47,6 +52,11 @@
       height: 16px;
       background-color: $primary;
     }
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(36px);
+      line-height: rem(44.64px);
+    }
   }
 
   &__text {
@@ -63,6 +73,12 @@
 
     >span {
       color: $primary;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(18px);
+      line-height: rem(22.64px);
+      margin-top: rem(40px);
     }
   }
 }

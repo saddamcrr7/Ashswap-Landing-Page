@@ -1,6 +1,7 @@
 .o-main {
   background: $dark;
   position: relative;
+  overflow-x: hidden;
 
   &__lines {
     width: 100%;
@@ -26,14 +27,25 @@
 
     &--1 {
       left: 0;
+
+      @include media-breakpoint-down(md) {
+        left: $grid-gutter-width / 2;
+      }
     }
 
     &--2 {
       left: 34.33333%;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
 
     &--3 {
       right: 0;
+      @include media-breakpoint-down(md) {
+        right: $grid-gutter-width / 2;
+      }
     }
   }
 }

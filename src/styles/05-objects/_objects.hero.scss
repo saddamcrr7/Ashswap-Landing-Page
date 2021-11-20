@@ -5,7 +5,12 @@
 
   padding: {
     top: rem(198px);
-    bottom: 450px; //test
+    bottom: rem(360px);
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: rem(153px);
+    padding-bottom: rem(240px);
   }
 
   &__bg {
@@ -49,6 +54,10 @@
     width: 100%;
     height: 100%;
     inset: 0;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
   }
 
   &__particle {
@@ -195,6 +204,11 @@
       left: 0;
       background-color: $primary;
     }
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(14px);
+      line-height: rem(17.64px);
+    }
   }
 
   &__title {
@@ -210,6 +224,12 @@
       right: auto;
     }
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(36px);
+      line-height: rem(44.64px);
+      margin-top: rem(65px);
+    }
   }
 
   &__cta {
@@ -217,6 +237,10 @@
     align-items: center;
     justify-content: center;
     margin-top: rem(48px);
+
+    @include media-breakpoint-down(md) {
+      margin-top: rem(42px);
+    }
   }
 
 }

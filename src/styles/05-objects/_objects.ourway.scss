@@ -14,13 +14,14 @@
   &__col {
     @include make-col-ready($gutter: 0px);
 
+    @include media-breakpoint-up(lg) {
+      &--left {
+        @include make-col(4.12)
+      }
 
-    &--left {
-      @include make-col(4.12)
-    }
-
-    &--right {
-      @include make-col(7.88)
+      &--right {
+        @include make-col(7.88)
+      }
     }
   }
 
@@ -33,6 +34,11 @@
     margin-top: rem(47px);
     margin-bottom: 0;
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(36px);
+      line-height: rem(44.64px);
+    }
   }
 
   &__vector-left {
@@ -41,6 +47,10 @@
     >svg {
       max-width: 100%;
       height: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+      display: none;
     }
   }
 
@@ -56,11 +66,15 @@
     }
 
     &--top {
-      position: absolute !important;
-      top: rem(10px) !important;
-      right: rem(100px) !important;
-      left: auto !important;
-      z-index: 5;
+
+
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: rem(10px);
+        right: rem(100px);
+        left: auto ;
+        z-index: 5;
+      }
 
       svg {
         position: relative;
@@ -68,7 +82,7 @@
     }
 
     &--bg {
-      position: relative !important;
+      position: relative;
     }
   }
 
@@ -105,8 +119,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    margin-top: rem(30px);
     margin-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: rem(30px);
+    }
   }
 
   &__list-item {
@@ -140,6 +157,22 @@
         background-color: $primary;
         border-color: $primary;
       }
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(14px);
+      line-height: rem(18.64px);
+      margin-bottom: rem(30px);
+      padding-left: rem(40px);
+    }
+  }
+
+  &__particles,&__particles-2 {
+    max-width: 100%;
+    height: auto;
+
+    @include media-breakpoint-down(md) {
+      display: none;
     }
   }
 

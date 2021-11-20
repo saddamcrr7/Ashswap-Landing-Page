@@ -7,6 +7,10 @@
   z-index: 3;
   padding: rem(21px) 0;
 
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
   &__container {
     @include make-container();
     @include make-container-max-widths()
@@ -20,8 +24,6 @@
     width: 100%;
   }
 
-  &__brand {
-  }
 
   &__nav {
     display: flex;
