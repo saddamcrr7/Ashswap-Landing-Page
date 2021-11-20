@@ -26,9 +26,26 @@
     width: rem(539px);
     height: rem(440px);
     top: 0;
-    bottom: 0;
     right: rem(93px);
     background: linear-gradient(304deg, #FFC10D -1.19%, #54C8EA 99.11%);
+
+    @include media-breakpoint-down(md) {
+      width: rem(240px);
+      height: rem(240px);
+      right: rem(150px);
+    }
+
+    @include media-breakpoint-down(sm) {
+      right: rem(60px);
+    }
+
+
+    @include media-breakpoint-down(xs) {
+      width: rem(180px);
+      height: rem(180px);
+      top: 30px;
+      right: rem(25px);
+    }
 
     &::before, &::after {
       position: absolute;
@@ -73,6 +90,16 @@
       display: flex;
       justify-content: space-between;
     }
+
+    @include media-breakpoint-down(md) {
+      &--left {
+        @include make-col(3.5)
+      }
+
+      &--right {
+        @include make-col(8.5);
+      }
+    }
   }
 
   &__wrapper {
@@ -80,6 +107,10 @@
     margin-top: rem(39px);
     max-width: rem(921px);
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+    }
   }
 
   &__wrapper-inner {
@@ -87,6 +118,11 @@
     min-height: 440px;
     max-width: rem(730px);
     display: flex;
+
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      min-height: rem(240px);
+    }
   }
 
   &__arrow {

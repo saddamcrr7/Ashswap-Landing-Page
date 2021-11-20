@@ -5,6 +5,11 @@
   overflow: hidden;
   filter: drop-shadow(0px 10px 50px rgba(25, 22, 41, 0.5));
 
+  @include media-breakpoint-down(md) {
+    max-width: rem(150px);
+    margin-top: rem(45px);
+  }
+
   &__wrapper {
     position: relative;
     width: 100%;
@@ -19,6 +24,10 @@
     position: relative;
     overflow: hidden;
     backface-visibility: hidden;
+
+    @include media-breakpoint-down(md) {
+      height: rem(150px)
+    }
   }
 
   &__image {

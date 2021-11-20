@@ -2,6 +2,10 @@
   padding-top: rem(192px);
   padding-bottom: rem(80px);
 
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+
   &__container {
     @include make-container();
     @include make-container-max-widths();

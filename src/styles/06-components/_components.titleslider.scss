@@ -3,6 +3,10 @@
   height: rem(132px);
   overflow: hidden;
 
+  @include media-breakpoint-down(md) {
+    height: rem(80px);
+  }
+
   &__wrapper {
     width: 100%;
     height: 100%;
@@ -19,6 +23,12 @@
     font-weight: $font-weight-bold;
     margin-right: rem(48px);
     margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(24px);
+      line-height: rem(29.76px);
+      margin-right: rem(10px);
+    }
   }
 
   &__title {
@@ -28,5 +38,10 @@
     font-weight: $font-weight-bold;
     max-width: rem(279.73px);
     margin-bottom: 0;
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(18px);
+      line-height: rem(22.32px);
+    }
   }
 }

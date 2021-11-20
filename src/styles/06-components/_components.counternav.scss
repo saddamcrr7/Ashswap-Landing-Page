@@ -8,6 +8,11 @@
     margin-bottom: rem(8px);
     font-weight: $font-weight-bold;
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(14px);
+      line-height: rem(17.36px);
+    }
   }
 
   &__text {
@@ -16,6 +21,11 @@
     line-height: rem(18px);
     margin-bottom: 0;
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(10px);
+      line-height: rem(12.6px);
+    }
   }
 
   &--right{

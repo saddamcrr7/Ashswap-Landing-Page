@@ -5,6 +5,14 @@
   margin-top: rem(32px);
   overflow: hidden;
 
+
+  @include media-breakpoint-down(md) {
+    width: rem(130px);
+    height: rem(200px);
+    margin-right: rem(20px);
+    margin-top: rem(20px);
+  }
+
   &__wrapper {
     width: 100%;
     height: 100%;
@@ -14,6 +22,11 @@
     height: rem(321px);
     padding: rem(47px) rem(32px);
     position: relative;
+
+    @include media-breakpoint-down(md) {
+      padding: rem(15px);
+      height: rem(200px);
+    }
   }
 
   &__bg {
@@ -42,6 +55,11 @@
     margin-bottom: 0;
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
     z-index: 2;
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(12px);
+      line-height: rem(15.36px);
+    }
   }
 
   &__text {
@@ -54,6 +72,12 @@
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
     opacity: 0.4;
     z-index: 2;
+
+    @include media-breakpoint-down(md) {
+      font-size: rem(10px);
+      line-height: rem(12.6px);
+      margin-top: rem(10px);
+    }
   }
 
   &__dot {
@@ -68,6 +92,11 @@
       height: 13px;
       border: 1px solid #FFFFFF;
       transition: background 0.3s;
+
+      @include media-breakpoint-down(md) {
+        width: rem(20px);
+        height: rem(8px);
+      }
     }
 
     .swiper-pagination-bullet+.swiper-pagination-bullet {
