@@ -23,6 +23,12 @@
     }
   }
 
+  &__particles {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
   &__particle {
     will-change: transform;
   }

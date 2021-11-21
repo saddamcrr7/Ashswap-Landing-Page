@@ -16,8 +16,9 @@
     }
   }
 
-  &__particle {
-    &--2 {
+  &__particles {
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
   }
 
@@ -45,6 +46,10 @@
       height: rem(180px);
       top: 30px;
       right: rem(25px);
+    }
+
+    @media  (max-width: 390.98px) {
+      right: rem(10px);
     }
 
     &::before, &::after {

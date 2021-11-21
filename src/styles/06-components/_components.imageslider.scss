@@ -10,6 +10,11 @@
     margin-top: rem(45px);
   }
 
+  @include media-breakpoint-down(xs) {
+    max-width: rem(100px);
+    margin-top: rem(70px);
+  }
+
   &__wrapper {
     position: relative;
     width: 100%;
@@ -27,6 +32,10 @@
 
     @include media-breakpoint-down(md) {
       height: rem(150px)
+    }
+
+    @include media-breakpoint-down(xs) {
+      height: rem(100px);
     }
   }
 
