@@ -40,6 +40,7 @@
       top: 0;
       left: 0;
       overflow: hidden;
+      will-change: height;
     }
   }
 
@@ -88,6 +89,7 @@
       background: $white;
       cursor: pointer;
       transform-origin: center;
+      will-change: transform;
     }
   }
 
@@ -106,6 +108,7 @@
 
   &__nav-item {
     text-align: center;
+    will-change: transform;
 
     &+& {
       margin-left: rem(56px);
@@ -144,6 +147,7 @@
     font-weight: $font-weight-bold;
     padding: rem(14px) rem(27px);
     background-color: $primary;
+    will-change: transform;
     transition: 0.3s ease;
 
     &::after {
