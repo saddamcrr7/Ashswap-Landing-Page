@@ -26,8 +26,14 @@ window.addEventListener('load',()=> {
       item.style.left = `${left}px`
 
       if(spot.dataset.index < 3) {
-        left = left - 30
-        item.style.left = `${left - item.clientWidth}px`
+
+        if(window.innerWidth < 993) {
+          left = left + 30
+          item.style.left = `${left}px`
+        }else {
+          left = left - 30
+          item.style.left = `${left - item.clientWidth}px`
+        }
       }
 
       if(spot.dataset.index > 3) {
