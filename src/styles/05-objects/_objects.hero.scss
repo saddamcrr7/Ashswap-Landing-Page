@@ -232,10 +232,12 @@
   }
 
   &__cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: rem(197.016px);
+    display: block;
     margin-top: rem(48px);
+    margin-left: auto;
+    margin-right: auto;
 
     @include media-breakpoint-down(md) {
       margin-top: rem(42px);
