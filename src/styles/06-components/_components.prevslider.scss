@@ -9,6 +9,7 @@
     height: 100%;
     display: flex;
     transition-property: transform;
+    will-change: transform;
   }
 
   &__item {

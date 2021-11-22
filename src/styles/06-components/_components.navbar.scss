@@ -23,8 +23,14 @@
   }
 
   &__brand {
+    width: 100%;
+    max-width: rem(124px);
     position: relative;
     z-index: 2;
+
+    @include media-breakpoint-down(sm) {
+      max-width: rem(82.67px);
+    }
   }
 
   &__group {
@@ -90,6 +96,20 @@
       cursor: pointer;
       transform-origin: center;
       will-change: transform;
+
+      &:nth-child(2) {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          top: 0;
+          bottom: 0;
+          left: 5px;
+          width: 4px;
+          background: $dark;
+        }
+      }
     }
   }
 

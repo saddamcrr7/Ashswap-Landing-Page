@@ -16,6 +16,7 @@
   }
 
   &__brand {
+    max-width: rem(129px);
     margin-top: rem(-50px);
 
     @include media-breakpoint-down(sm) {

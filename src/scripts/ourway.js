@@ -4,7 +4,6 @@ import { gsap } from "../scripts/vendor/gsap-member/src/all";
 const spots = document.querySelectorAll('.js-spot')
 const hoverItems = document.querySelectorAll('.o-ourway__hover-item')
 
-
 window.addEventListener('load',()=> {
     spots.forEach(spot => {
       const item =  hoverItems[spot.dataset.index]

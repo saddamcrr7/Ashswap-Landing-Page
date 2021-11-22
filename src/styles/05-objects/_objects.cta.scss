@@ -66,6 +66,11 @@
     @include media-breakpoint-down(md) {
       margin-top: rem(30px);
     }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   &__text {
