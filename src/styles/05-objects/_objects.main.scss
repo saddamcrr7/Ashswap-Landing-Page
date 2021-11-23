@@ -37,7 +37,7 @@
       left: 34.33333%;
 
       @include media-breakpoint-down(md) {
-        display: none;
+        @include  hidden-visually();
       }
     }
 

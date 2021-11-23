@@ -93,7 +93,7 @@
     height: auto;
 
     @include media-breakpoint-down(md) {
-      display: none;
+      @include  hidden-visually();
     }
   }
 }

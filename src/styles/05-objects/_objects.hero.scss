@@ -55,7 +55,7 @@
     inset: 0;
 
     @include media-breakpoint-down(md) {
-      display: none;
+      @include  hidden-visually();
     }
   }
 

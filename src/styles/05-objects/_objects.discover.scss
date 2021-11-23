@@ -25,7 +25,7 @@
 
   &__particles {
     @include media-breakpoint-down(sm) {
-      display: none;
+      @include  hidden-visually();
     }
   }
 
