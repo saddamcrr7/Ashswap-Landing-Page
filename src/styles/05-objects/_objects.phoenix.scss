@@ -71,6 +71,11 @@
 
   &__images {
     position: relative;
+    will-change: transform;
+
+    >div {
+      will-change: transform;
+    }
 
     @include media-breakpoint-up(lg) {
       margin-top: -80px;
@@ -78,6 +83,7 @@
   }
 
   &__image {
+
     &--main {
       @include media-breakpoint-up(lg) {
         margin-top: -150px;

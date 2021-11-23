@@ -161,6 +161,7 @@
     top: rem(30px);
     left: 50%;
     transform: translateX(-50%);
+    will-change: transform;
 
     &--sm {
       top: -10px;

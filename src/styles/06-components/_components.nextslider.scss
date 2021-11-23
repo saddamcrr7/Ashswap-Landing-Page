@@ -9,7 +9,7 @@
     height: 100%;
     display: flex;
     transition-property: transform;
-  }
+    will-change: transform;  }
 
   &__item {
     flex: 0 0 auto;
