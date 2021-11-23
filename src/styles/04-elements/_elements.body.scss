@@ -1,7 +1,11 @@
 body {
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: none;
+  background: $dark;
+  overflow: auto;
 
   &.is-blocked,
   &.is-modal-open,
@@ -11,5 +15,12 @@ body {
 
   &.is-nav-mobile-open {
     overflow: hidden;
+  }
+
+  >#root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
   }
 }
