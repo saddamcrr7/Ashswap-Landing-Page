@@ -35,7 +35,7 @@
   &__bg {
     position: absolute;
     inset: 0;
-    background-color: #757391;
+    background-color: #333150;
     clip-path: polygon(100% 0, 100% 76%, 82% 100%, 0 100%, 0 0);
 
     &::before {
@@ -67,14 +67,13 @@
 
   &__text {
     position: relative;
-    color: $white;
+    color: $grey-blue;
     font-size: rem(14px);
     line-height: rem(18px);
     font-weight: $font-weight-medium;
     margin-top: rem(32px);
     margin-bottom: 0;
     text-shadow: 0px 4px 50px rgba(51, 50, 74, 0.25);
-    opacity: 0.4;
     z-index: 2;
 
     @include media-breakpoint-down(md) {
