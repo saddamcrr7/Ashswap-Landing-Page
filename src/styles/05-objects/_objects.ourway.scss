@@ -102,6 +102,7 @@
     pointer-events: none;
     z-index: 6;
     will-change: transform;
+    backface-visibility: hidden;
   }
 
 

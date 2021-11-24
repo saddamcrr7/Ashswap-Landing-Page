@@ -56,7 +56,7 @@ function smoothScroll(content, viewport, smoothness) {
 		}
 	});
 
-	return ScrollTrigger.create({
+	const ST = ScrollTrigger.create({
 		animation: gsap.fromTo(content, {y:0}, {
 			y: () => document.documentElement.clientHeight - height,
 			ease: "none",
@@ -76,4 +76,21 @@ function smoothScroll(content, viewport, smoothness) {
 		},
 		onRefresh: killScrub // when the screen resizes, we just want the animation to immediately go to the appropriate spot rather than animating there, so basically kill the scrub.
 	});
+
+  window.addEventListener('resize', ()=> {
+      onResize();
+      ST.refresh();
+  })
+
+  let progress
+
+  ScrollTrigger.addEventListener("refreshInit", () => {
+    progress = ST.progress
+  });
+
+  ScrollTrigger.addEventListener("refresh", () => {
+    ST.scroll(progress * ScrollTrigger.maxScroll(window))
+  });
+
+  return ST
 }
