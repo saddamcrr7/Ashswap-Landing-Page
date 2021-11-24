@@ -1,5 +1,3 @@
-import './smoothScroll'
-
 import './navbar'
 import './animations'
 import './sliders'

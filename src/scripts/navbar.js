@@ -15,7 +15,7 @@ window.addEventListener('load', ()=> {
         e.pause(),
         r.pause(),
         e.to(t.group, {
-            height: innerHeight
+            height: '100vh'
         }),
         r.to(t.togglerSpans[0], {
             rotate: 45,

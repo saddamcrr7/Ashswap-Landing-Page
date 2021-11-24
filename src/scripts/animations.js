@@ -9,12 +9,12 @@ window.addEventListener('load', ()=> {
 
 function animations() {
 
-  const fireTl = gsap.timeline({repeat:-1, yoyo: true})
-
-  fireTl.to('.o-hero__volcano-flame--sm', {y: -10, duration: 0.7, ease: 'none'})
-  .to('.o-hero__volcano-flame--lg', {y: -15, duration: 1, delay: -0.8, ease: 'none'})
-
   if(window.innerWidth > 991) {
+    const fireTl = gsap.timeline({repeat:-1, yoyo: true})
+
+    fireTl.to('.o-hero__volcano-flame--sm', {y: -10, duration: 0.7, ease: 'none'})
+    .to('.o-hero__volcano-flame--lg', {y: -15, duration: 1, delay: -0.8, ease: 'none'})
+
     const scene = document.getElementById('scene');
     const parallaxInstance = new Parallax(scene);
 

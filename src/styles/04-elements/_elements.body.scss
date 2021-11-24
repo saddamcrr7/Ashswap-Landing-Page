@@ -12,26 +12,4 @@ body {
     overflow: hidden;
   }
 
-  #viewport {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    @include media-breakpoint-down(lg) {
-      height: 100vh;
-      top: 0;
-      bottom: auto;
-    }
-  }
-
-  #root {
-    overflow: visible;
-    width: 100%;
-    will-change: transform;
-  }
 }
