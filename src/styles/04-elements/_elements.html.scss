@@ -1,6 +1,3 @@
 html {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  overscroll-behavior-x: none;
-  background: $dark;
+  scroll-behavior: smooth;
 }
