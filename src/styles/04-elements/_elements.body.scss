@@ -1,12 +1,10 @@
 body {
-  height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: touch;
-  overscroll-behavior: none;
+  overscroll-behavior-x: none;
   background: $dark;
-  overflow: auto;
 
   &.is-blocked,
   &.is-modal-open,
@@ -14,12 +12,20 @@ body {
     overflow: hidden;
   }
 
-  >#root {
-    position: relative;
-    width: 100%;
+  #viewport {
+    overflow: hidden;
+    position: fixed;
     height: 100%;
-    -webkit-overflow-scrolling: touch;
-    backface-visibility: hidden;
-    transform: translate3d(0,0,0);
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  #root {
+    overflow: visible;
+    width: 100%;
+    will-change: transform;
   }
 }

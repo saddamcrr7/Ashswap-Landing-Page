@@ -1,10 +1,6 @@
 html {
-  height: 100%;
-  box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: none;
+  overscroll-behavior-x: none;
   background: $dark;
-  overflow: hidden;
 }

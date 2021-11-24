@@ -8,8 +8,6 @@ window.addEventListener('load', ()=> {
 })
 
 function animations() {
-  const scene = document.getElementById('scene');
-  const parallaxInstance = new Parallax(scene);
 
   const fireTl = gsap.timeline({repeat:-1, yoyo: true})
 
@@ -17,6 +15,9 @@ function animations() {
   .to('.o-hero__volcano-flame--lg', {y: -15, duration: 1, delay: -0.8, ease: 'none'})
 
   if(window.innerWidth > 991) {
+    const scene = document.getElementById('scene');
+    const parallaxInstance = new Parallax(scene);
+
     gsap.from(".o-hero__particle--1", {scaleX: 0, duration: 0.8, repeat:-1, repeatDelay: 3, yoyo: true});
 
     gsap.to(".o-hero__particle--2", {scaleY: 0, duration: 1, delay: 1.5, repeat:-1, repeatDelay: 2, yoyo: true});

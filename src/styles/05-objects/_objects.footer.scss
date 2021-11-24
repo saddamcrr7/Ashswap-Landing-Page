@@ -1,6 +1,7 @@
 .o-footer {
-  background-color: $footer-bg;
+  display: block;
   position: relative;
+  background-color: $footer-bg;
   z-index: 5;
 
   &__container {

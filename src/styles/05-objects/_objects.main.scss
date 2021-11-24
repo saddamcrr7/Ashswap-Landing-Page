@@ -1,6 +1,7 @@
 .o-main {
-  background: $dark;
+  display: block;
   position: relative;
+  background: $dark;
   overflow-x: hidden;
 
   &__lines {

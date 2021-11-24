@@ -1,4 +1,5 @@
 .o-phoenix {
+  display: block;
   position: relative;
   padding: {
     top: rem(98px);
@@ -72,17 +73,19 @@
   &__images {
     position: relative;
     will-change: transform;
-
-    >div {
-      will-change: transform;
-    }
+   }
 
     @include media-breakpoint-up(lg) {
       margin-top: -80px;
+
+      >div {
+        will-change: transform;
     }
   }
 
   &__image {
+
+
 
     &--main {
       @include media-breakpoint-up(lg) {
