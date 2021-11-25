@@ -5,6 +5,7 @@ import Swiper, {
   EffectFade,
   Autoplay
 } from 'swiper';
+import gsap from './vendor/gsap-member/src/gsap-core';
 // configure Swiper to use modules
 Swiper.use([Navigation, Pagination, Controller, EffectFade, Autoplay]);
 
@@ -79,6 +80,14 @@ function homePageSlider() {
     },
   })
 
+  const imagesliderBgs = document.querySelectorAll('.o-sliders__imagebg')
+
+  imageslider.on('slideChange', function () {
+    imagesliderBgs.forEach(imagesliderBg => {
+      gsap.to(imagesliderBg, {opacity: 0})
+    })
+    gsap.to(imagesliderBgs[imageslider.realIndex], {opacity: 1})
+  });
 
   const nextArrow = document.querySelector('.o-sliders__arrow--next')
   const prevArrow = document.querySelector('.o-sliders__arrow--prev')

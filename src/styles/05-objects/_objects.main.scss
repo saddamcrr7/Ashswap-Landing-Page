@@ -2,7 +2,6 @@
   display: block;
   position: relative;
   background: $dark;
-  -webkit-transform: translate3d(0,0,0);
 
   &__lines {
     width: 100%;
@@ -25,6 +24,7 @@
     height: 100%;
     width: 1px;
     background-color: #33324A;
+    will-change: transform;
 
     &--1 {
       left: 0;

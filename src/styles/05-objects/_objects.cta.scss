@@ -27,12 +27,17 @@
     opacity: 0.1;
     filter: blur(324px);
     background: $primary;
+    will-change: transform;
   }
 
   &__bg-vectors {
     position: absolute;
     right: rem(108px);
     bottom: rem(198px);
+  }
+
+  &__particle {
+    will-change: transform;
   }
 
   &__container {

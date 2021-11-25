@@ -9,14 +9,15 @@ window.addEventListener('load', ()=> {
 
 function animations() {
 
-  if(window.innerWidth > 991) {
-    const fireTl = gsap.timeline({repeat:-1, yoyo: true})
+  const fireTl = gsap.timeline({repeat:-1, yoyo: true})
 
     fireTl.to('.o-hero__volcano-flame--sm', {y: -10, duration: 0.7, ease: 'none'})
     .to('.o-hero__volcano-flame--lg', {y: -15, duration: 1, delay: -0.8, ease: 'none'})
 
     const scene = document.getElementById('scene');
     const parallaxInstance = new Parallax(scene);
+
+  if(window.innerWidth > 991) {
 
     gsap.from(".o-hero__particle--1", {scaleX: 0, duration: 0.8, repeat:-1, repeatDelay: 3, yoyo: true});
 

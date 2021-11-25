@@ -3,7 +3,6 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  -webkit-transform: translate3d(0,0,0);
 
   padding: {
     top: rem(198px);
@@ -43,6 +42,7 @@
     opacity: 0.2;
     filter: blur(324px);
     background: $primary;
+    will-change: transform;
   }
 
   &__bg-image {
@@ -237,7 +237,8 @@
 
   &__cta {
     width: 100%;
-    max-width: rem(197.016px);
+    max-width: rem(200px);
+    text-align: center;
     display: block;
     margin-top: rem(48px);
     margin-left: auto;

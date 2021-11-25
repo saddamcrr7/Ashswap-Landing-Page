@@ -2,15 +2,19 @@
   width: rem(255px);
   height: rem(321px);
   margin-right: rem(60px);
-  margin-top: rem(32px);
+  margin-top: rem(-32px);
   overflow: hidden;
-
 
   @include media-breakpoint-down(md) {
     width: rem(130px);
     height: rem(200px);
     margin-right: rem(20px);
-    margin-top: rem(20px);
+    margin-top: rem(-20px);
+  }
+
+
+@media (max-width: 374.98px) {
+    margin-right: rem(10px);
   }
 
   &__wrapper {
