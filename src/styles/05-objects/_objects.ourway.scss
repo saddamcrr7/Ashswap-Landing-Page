@@ -62,6 +62,7 @@
   &__vectors {
     position: relative;
     width: 100%;
+    will-change: transform;
   }
 
   &__vector {

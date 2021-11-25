@@ -95,9 +95,9 @@ module.exports = {
     // In this case, this plugin will remove 'dist' and 'build' folder before re-build again
     new CleanWebpackPlugin(),
     // PurgecssPlugin will remove unused CSS
-    /*new PurgecssPlugin({
-      //paths: glob.sync(path.resolve(__dirname, '../src/'), { nodir: true })
-    //}),*/
+    new PurgecssPlugin({
+      paths: glob.sync(path.resolve(__dirname, '../src/**/*'), { nodir: true })
+    }),
     // This plugin will extract all css to one file
     new MiniCssExtractPlugin({
       filename: "[name].[chunkhash:8].bundle.css",

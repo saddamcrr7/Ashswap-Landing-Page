@@ -3,6 +3,7 @@
   position: relative;
   padding-top: rem(31px);
   padding-bottom: rem(97px);
+  will-change: transform;
 
   &__bg  {
     position: absolute;
