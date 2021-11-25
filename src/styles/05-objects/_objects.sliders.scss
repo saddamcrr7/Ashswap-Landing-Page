@@ -173,6 +173,7 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 3;
 
     &--prev {
       left: 0;
